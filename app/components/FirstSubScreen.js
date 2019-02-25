@@ -7,11 +7,11 @@ import {
   View
 } from 'react-native';
 
-const SecondScreen = () => {
+const FirstSubScreen = () => {
   return (
     <View style={styles.container}>
       <Text style={styles.welcome}>
-        Second Screen
+        First Sub Screen
       </Text>
     </View>
   );
@@ -22,14 +22,14 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
-    backgroundColor: '#fff',
+    backgroundColor: '#c91414',
   },
   welcome: {
     fontSize: 20,
     textAlign: 'center',
     margin: 10,
-    color: '#000',
+    color: '#fff',
   },
 });
 
-export default SecondScreen;
+export default FirstSubScreen;

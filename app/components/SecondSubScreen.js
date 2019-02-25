@@ -1,4 +1,4 @@
-// app/ScarletScreen.js
+// GrayScreen.js
 
 import React, { Component } from 'react';
 import {
@@ -6,16 +6,12 @@ import {
   Text,
   View
 } from 'react-native';
-import { Actions } from 'react-native-router-flux';
 
-const FirstScreen = () => {
+const SecondSubScreen = () => {
   return (
     <View style={styles.container}>
-      <Text 
-        style={styles.welcome}
-        onPress={() => Actions.Second()} // New Code
-      >
-        First Screen
+      <Text style={styles.welcome}>
+        Second Sub Screen
       </Text>
     </View>
   );
@@ -26,7 +22,7 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
-    backgroundColor: '#000',
+    backgroundColor: '#1f9b25',
   },
   welcome: {
     fontSize: 20,
@@ -36,4 +32,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default FirstScreen;
+export default SecondSubScreen;
